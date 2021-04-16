@@ -13,14 +13,14 @@
 #include <PubSubClient.h>
 
 // SDS011 pins
-#define PIN_RX  D7
-#define PIN_TX  D8
+#define PIN_RX  12
+#define PIN_TX  14
 
 #define MEASURE_INTERVAL_MS 30000
 
-#define MQTT_HOST   "aliensdetected.com"
+#define MQTT_HOST   "space.makerspaceleiden.nl"
 #define MQTT_PORT   1883
-#define MQTT_TOPIC  "bertrik/dust"
+#define MQTT_TOPIC  "makerspace/stof"
 
 static SoftwareSerial sensor(PIN_RX, PIN_TX);
 static WiFiClient wifiClient;
@@ -132,4 +132,3 @@ void loop(void)
         }
     }
 }
-
